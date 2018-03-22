@@ -1,3 +1,5 @@
+[![Coverage Status](https://coveralls.io/repos/github/DhanitP/reactriot2017-fillmeup/badge.svg?branch=master)](https://coveralls.io/github/DhanitP/reactriot2017-fillmeup?branch=master)
+
 # FILL ME UP
 
 Fill Me Up is a simply to use, user-friendly bridge between petroleum suppliers and the average motorist consumer. It is a platform that allows suppliers to engage their consumers and provide meaningful information that will help their consumers make informed decisions with regards to re-fueling their vechicles.
