@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "nyc npm run vanilla_test && nyc report --reporter=text-lcov | coveralls",
-    "vanilla_test": "./node_modules/mocha/bin/mocha test --compilers js:babel-core/register --recursive --require test/ignore_styles.js",
+    "vanilla_test": "./node_modules/mocha/bin/mocha test --compilers js:babel-core/register --recursive -r test/setup.js -r test/ignore_styles.js",
     "dev": "webpack -d --watch",
     "build": "NODE_ENV=production webpack -p",
     "start": "node server.js",
@@ -51,6 +51,7 @@
     "coveralls": "^3.0.1",
     "css-loader": "^0.26.4",
     "enzyme": "^2.4.1",
+    "enzyme-adapter-react-16": "^1.1.1",
     "eslint": "^3.4.0",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-import": "^2.2.0",
