@@ -3,7 +3,7 @@ cat <<script > cirun.sh
 set -e
 export HOME=/root
 mkdir -p /root/service/tmp
-HOME=/root npm install --no-optional
+HOME=/root npm install --no-optional && npm install -g coveralls
 npm run test
 script
 
